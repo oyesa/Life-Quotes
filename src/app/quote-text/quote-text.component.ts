@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { EventEmitter } from 'stream'; 
+import {Quote} from '../quote'
 
 @Component({
   selector: 'app-quote-text',
@@ -7,10 +9,29 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class QuoteTextComponent implements OnInit {
 
-  numberOfLikes! : number;
+  @Input() quote:Quote
+  @Output() quoteDelete = new EventEmitter<boolean>()
+
+  thumbsQuote(event){
+    if(event=== 'up'){
+      this.quote.thumbsUp+1
+    }else if(event=== 'down'){
+      this.quote.thumbsDown+1
+    }
+  }
+
+  deleteQuote(){
+    if(confirm('Are you certain you want to delete?')){
+      this.quoteDelete.emit(true)
+    }else{
+      this.quoteDelete.emit(false)
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
