@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GoalHeaderComponent } from './goal-header/goal-header.component';
 import { QuoteTextComponent } from './quote-text/quote-text.component';
+import { QuotesDisplayComponent } from './quotes-display/quotes-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GoalHeaderComponent,
-    QuoteTextComponent
+    QuoteTextComponent,
+    QuotesDisplayComponent
   ],
   imports: [
     BrowserModule,
