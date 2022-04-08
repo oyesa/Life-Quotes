@@ -1,19 +1,19 @@
 
 
   <div class="card quote-text">
-    <div class="card-header">
+    <!-- <div class="card-header">
       Quote for the day
-    </div>
+    </div> -->
     <div class="card-body">
       <blockquote class="blockquote mb-0">
-        <p>Each language no matter how small carries its memory of the world.</p>
-        <footer class="blockquote-footer">Africans in <cite title="Source Title">African Intellectuals</cite></footer>
+        <p>{{quote.quoteText}}</p>
+        <footer class="blockquote-footer">{{quote.quoteAuthor}} <cite title="Source Title">{{quote.quoteSource}}</cite></footer>
       </blockquote>
       <br>
       <div class="card-footer">
-        <button class="btn btn-primary mr-5" type="button"><i class="fa fa-thumbs-up  fa-sm"></i></button>
-        <button class="btn btn-primary mr-5" type="button"><i class="fa fa-thumbs-down fa-sm"></i></button>
-        <button class="btn btn-primary mr-5" type="button"><i class="fa fa-trash fa-sm"></i></button>
+        <button class="btn btn-outline-success" type="button" (click)="thumbsQuote('up')"><i class="fa fa-thumbs-up  fa-sm"></i>{{quote.thumbsUp}}</button>
+        <button class="btn btn-outline-dark" type="button" (click)="thumbsQuote('down')"><i class="fa fa-thumbs-down fa-sm"></i>{{quote.thumbsDown}}</button>
+        <button class="btn btn-outline-danger" type="button"><i class="fa fa-trash fa-sm"></i></button>
       </div>
     </div>
   </div>

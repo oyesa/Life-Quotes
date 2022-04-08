@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-quote-text',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteTextComponent implements OnInit {
 
+  numberOfLikes! : number;
   constructor() { }
 
   ngOnInit(): void {
