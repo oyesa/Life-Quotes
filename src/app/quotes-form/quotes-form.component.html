@@ -1,0 +1,14 @@
+
+
+<div class="container">
+  <form name="quoteForm" #quoteForm="ngForm" (ngSubmit)='submitQuote();quoteForm.reset()' >
+    <div class="form-group">
+      <label for="quoteText">Quote Text</label>
+      <textarea type="text" id="quoteText" class="form-control" rows="1" #quoteText="ngModel" [(ngModel)]="newQuote.quoteText" placeholder="Quote Text"></textarea>
+
+      <div class="form-group">
+        <label for="quoteAuthor">Quote Author</label>
+      </div>
+    </div>
+  </form>
+</div>
