@@ -32,7 +32,9 @@
     </ngb-carousel>
 
     <div>
-      <button><i class="fa fa-plus-circle fa-lg"></i>Add Quote</button>
+      <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-warning"><i class="fa fa-plus-circle fa-lg"></i>Add Quote</button>
+      <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-warning"><i class="fa fa-minus-circle fa-lg"></i>Hide</button>
     </div>
+    <app-quotes-form *ngIf="showQuoteForm" (quoteAdd)="addQuote($event)"></app-quotes-form>
 </div>
 
