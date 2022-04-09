@@ -35,3 +35,10 @@ deleteQuote(event, index){
     this.quotes.splice(index, 1)
   }
 }
+
+addQuote(newquote:Quote){
+  let quoted=this.quotes.length+1
+  newquote.id=quoteId 
+
+  this.quotes.push(newquote)
+}
