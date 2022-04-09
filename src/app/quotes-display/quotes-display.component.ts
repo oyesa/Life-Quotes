@@ -1,5 +1,6 @@
-import { Quote } from '@angular/compiler';
+import { Quote } from '../quote';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-quotes-display',
@@ -20,6 +21,7 @@ showQuoteForm: boolean=false
 quotes: Quote[] = [
   new Quote(0, 'African Intellectuals', 'Each language no matter how small carries its memory of the world')
   new Quote(1, 'Jane Austen', 'A person may be proud without being vain, pride relates more to the opinion of ourselves, vanity to what we would have people think of us.')
+  new Quote(2, 'Charles Bukowski', '...But we joke and laugh otherwise we would start screaming.')
 ]
 
 // toggle quote
