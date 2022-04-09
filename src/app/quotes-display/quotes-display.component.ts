@@ -27,3 +27,11 @@ quotes: Quote[] = [
 toggleQuoteText(index){
   this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
 }
+toggleQuoteForm(){
+  this.showQuoteForm=!this.showQuoteForm
+}
+deleteQuote(event, index){
+  if (event){
+    this.quotes.splice(index, 1)
+  }
+}
