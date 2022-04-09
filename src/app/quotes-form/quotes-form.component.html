@@ -8,7 +8,10 @@
 
       <div class="form-group">
         <label for="quoteAuthor">Quote Author</label>
+        <input type="text" class="form-control" id="quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteAuthor" placeholder="Quote Author">
       </div>
     </div>
+
+    <button class="btn btn-success" type="submit">Add Quote</button>
   </form>
 </div>
