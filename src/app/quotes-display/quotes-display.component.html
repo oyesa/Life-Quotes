@@ -1,7 +1,8 @@
 
 <div class="container-fluid">
-  <ngb-carousel [interval]="10000">
-    <ng-template ngbSlide  *ngFor="let quote of quotes; let i=index">
+  <ngb-carousel>
+    <template ngbSlide  *ngFor="let quote of quotes; let i=index">
+      
       <div class="picsum-img-wrapper">
         <!-- <img [src]="images[0]" alt="Random first slide"> -->
       </div>
@@ -9,8 +10,7 @@
         <h3>{{quote.quoteText}}</h3>
         <p>{{quote.quoteAuthor}} </p>
       </div>
-      <button></button>
-   
+      
     
       <div class="picsum-img-wrapper">
         <!-- <img [src]="images[1]" alt="Random second slide">
@@ -27,13 +27,13 @@
         <h3>{{quote.quoteText}}</h3>
         <p>{{quote.quoteAuthor}} </p>
       </div>
-    </ng-template>
-    </ngb-carousel>
+    <!-- </template> -->
+    <!-- </ngb-carousel> -->
 
     <div>
       <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-warning"><i class="fa fa-plus-circle fa-lg"></i>Add Quote</button>
       <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-warning"><i class="fa fa-minus-circle fa-lg"></i>Hide</button>
     </div>
-    <app-quotes-form *ngIf="showQuoteForm" (quoteAdd)="addQuote($event)"></app-quotes-form>
+    <!-- <app-quotes-form *ngIf="showQuoteForm" (quoteAdd)="addQuote($event)"></app-quotes-form> -->
 </div>
 

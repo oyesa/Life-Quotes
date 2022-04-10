@@ -24,9 +24,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule,
+    NgbModule
   ],
   providers: [],
-  bootstrap: [AppComponent, GoalHeaderComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

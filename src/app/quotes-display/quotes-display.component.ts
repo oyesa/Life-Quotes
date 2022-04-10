@@ -1,6 +1,6 @@
 import { Quote } from '../quote';
 import { Component, OnInit } from '@angular/core';
-import { QuotesFormComponent } from '../quotes-form/quotes-form.component';
+import { from} from 'rxjs';
 
 
 
