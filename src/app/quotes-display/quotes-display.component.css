@@ -9,6 +9,10 @@
   margin: 7px;
 }
 
+button{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .carousel-caption{
   top: 30%;
 }
@@ -17,3 +21,11 @@
   height: 80vh;
   width: 100%;
 }
+
+.card{
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .card-text{
+    color: #000;
+    }
