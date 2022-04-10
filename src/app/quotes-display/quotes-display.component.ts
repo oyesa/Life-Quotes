@@ -1,6 +1,7 @@
 import { Quote } from '../quote';
 import { Component, OnInit } from '@angular/core';
-import { from} from 'rxjs'
+import { QuotesFormComponent } from '../quotes-form/quotes-form.component';
+
 
 
 @Component({
@@ -11,8 +12,8 @@ import { from} from 'rxjs'
 export class QuotesDisplayComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(0, 'African Intellectuals', 'Each language no matter how small carries its memory of the world', 0, 0)
-    new Quote(1, 'Jane Austen', 'A person may be proud without being vain, pride relates more to the opinion of ourselves, vanity to what we would have people think of us.', 0, 0)
+    new Quote(0, 'African Intellectuals', 'Each language no matter how small carries its memory of the world', 0, 0),
+    new Quote(1, 'Jane Austen', 'A person may be proud without being vain, pride relates more to the opinion of ourselves, vanity to what we would have people think of us.', 0, 0),
     new Quote(2, 'Charles Bukowski', '...But we joke and laugh otherwise we would start screaming.', 0, 0)
   ]
 
@@ -21,7 +22,7 @@ export class QuotesDisplayComponent implements OnInit {
     this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
   }
   toggleQuoteForm(){
-    this.showQuoteForm=!this.showQuoteForm
+    this.showQuoteForm=!this.showQuoteForm;
   }
   deleteQuote(event, index){
     if (event){
@@ -30,9 +31,8 @@ export class QuotesDisplayComponent implements OnInit {
   }
   
   addQuote(newquote:Quote){
-    let quoted=this.quotes.length+1
-    newquote.id=quoteId 
-  
+    let quoteLength=this.quotes.length;
+    newquote.id= quoteLength+1;
     this.quotes.push(newquote)
   }
 

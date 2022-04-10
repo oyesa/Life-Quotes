@@ -8,6 +8,7 @@ import { GoalHeaderComponent } from './goal-header/goal-header.component';
 import { QuoteTextComponent } from './quote-text/quote-text.component';
 import { QuotesDisplayComponent } from './quotes-display/quotes-display.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
+import { QuoteFooterComponent } from './quote-footer/quote-footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { QuotesFormComponent } from './quotes-form/quotes-form.component';
     GoalHeaderComponent,
     QuoteTextComponent,
     QuotesDisplayComponent,
-    QuotesFormComponent
+    QuotesFormComponent,
+    QuoteFooterComponent
   ],
   imports: [
     BrowserModule,
