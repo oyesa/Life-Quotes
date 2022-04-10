@@ -10,6 +10,7 @@ import { QuotesDisplayComponent } from './quotes-display/quotes-display.componen
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { QuoteFooterComponent } from './quote-footer/quote-footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DateCounterPipe } from './date-counter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     QuoteTextComponent,
     QuotesDisplayComponent,
     QuotesFormComponent,
-    QuoteFooterComponent
+    QuoteFooterComponent,
+    DateCounterPipe
   ],
   imports: [
     BrowserModule,
