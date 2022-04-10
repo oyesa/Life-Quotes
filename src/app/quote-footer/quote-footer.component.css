@@ -1,3 +1,10 @@
 .icons{
   width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.icons .fa{
+  margin: 0 13px;
+  padding: 18px 0;
 }
