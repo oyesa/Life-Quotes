@@ -21,6 +21,8 @@ export class QuotesDisplayComponent implements OnInit {
   toggleQuoteText(index){
     this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
   }
+
+  showQuoteForm: boolean=false
   toggleQuoteForm(){
     this.showQuoteForm=!this.showQuoteForm;
   }
@@ -44,7 +46,7 @@ export class QuotesDisplayComponent implements OnInit {
 
 }
 
-// showQuoteForm: boolean=false
+
 
 
 
