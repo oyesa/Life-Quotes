@@ -1,6 +1,17 @@
 # LifeQuotes
+#### By Oyesa Mercy Oluchina
+#### 10/04/2022
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+### Description
+This is an Angular web application that enables users to add their favourite life quotes. The posted quotes can be given a thumbs up or down vote.
+
+### Behaviour Driven Development (BDD)
+Behaviour:The web page loads displaying an interactive carousel that contains the life quotes posted with a thumbs up, thumbs down and delete buttons.
+
+Input: When the user clicks on the toggle icon, a form is reveled where the user can add a quote.
+
+Output: When the user inputs a quote on the form, upon submitting, the users quote will be displayed on the carousel
+
 
 ## Development server
 
