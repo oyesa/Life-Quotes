@@ -7,3 +7,12 @@
 .btn{
   margin: 7px;
 }
+
+.carousel-caption{
+  top: 30%;
+}
+
+.picsum-img-wrapper{
+  height: 80vh;
+  width: 100%;
+}
