@@ -1,13 +1,12 @@
 import { Quote } from '../quote';
 import { Component, OnInit } from '@angular/core';
-import { from} from 'rxjs';
 
 
 
 @Component({
   selector: 'app-quotes-display',
   templateUrl: './quotes-display.component.html',
-  styleUrls: ['./quotes-display.component.css']
+  styleUrls: ['./quotes-display.component.css'],
 })
 export class QuotesDisplayComponent implements OnInit {
 

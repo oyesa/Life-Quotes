@@ -1,39 +1,37 @@
 
 <div class="container-fluid mt-5" style="width: 100%;">
-  <ngb-carousel>
-    <template ngbSlide  *ngFor="let quote of quotes; let i=index">
+  <ngb-carousel [interval]="3000">
+    <ng-template ngbSlide  *ngFor="let quote of quotes; let i=index">
       
       <div class="picsum-img-wrapper">
-        <!-- <img [src]="images[0]" alt="Random first slide"> -->
       </div>
       <div class="carousel-caption">
-        <h3>{{quote.quoteText}}</h3>
-        <p>{{quote.quoteAuthor}} </p>
+        <!-- add function to display quote with highest vote -->
+        <div class="card-title">
+          <h3>Submitted by: Oyesa </h3>
+          <p></p>
+        </div>
       </div>
-      
-    
       <div class="picsum-img-wrapper">
-        <!-- <img [src]="images[1]" alt="Random second slide">
-      </div> -->
       <div class="carousel-caption">
-        <h3>{{quote.quoteText}}</h3>
-        <p>{{quote.quoteAuthor}} </p>
+        <div class="card-title">
+          <h3>Submitted by: Oluchina </h3>
+          <p></p>
+        </div>
       </div>
 
       <div class="picsum-img-wrapper">
-        <!-- <img [src]="images[1]" alt="Random second slide">
-      </div> -->
       <div class="carousel-caption">
-        <h3>{{quote.quoteText}}</h3>
-        <p>{{quote.quoteAuthor}} </p>
+        <h3>Submitted by: Oluchi </h3>
+        <p></p>
       </div>
-    <!-- </template> -->
-    <!-- </ngb-carousel> -->
+    </ng-template ngbSlide> 
+    </ngb-carousel>
 
     <div>
       <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-warning"><i class="fa fa-plus-circle fa-lg"></i>Add Quote</button>
       <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-warning"><i class="fa fa-minus-circle fa-lg"></i>Hide</button>
     </div>
-    <!-- <app-quotes-form *ngIf="showQuoteForm" (quoteAdd)="addQuote($event)"></app-quotes-form> -->
+    <app-quotes-form *ngIf="showQuoteForm" (quoteAdd)="addQuote($event)"></app-quotes-form> 
 </div>
 
