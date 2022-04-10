@@ -5,3 +5,17 @@
   text-align: center;
   color: white;
 }
+
+.form-control{
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border: 0;
+  color: white;
+}
+
+textarea:focus, input:focus{
+  border: none;
+}
+.form-control::placeholder{
+  color: rgb(236, 226, 226);
+}
