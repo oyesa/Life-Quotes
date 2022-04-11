@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { Quote } from '../quote';
-import { formatCurrency } from '@angular/common';
+// import { formatCurrency } from '@angular/common';
 
 
 @Component({
@@ -15,14 +15,18 @@ export class QuotesFormComponent implements OnInit {
 
   @Output() addQuote = new EventEmitter<Quote>();
 
-  submitQuote(f:NgForm){
-    if(f.valid){
-      this.addQuote.emit(this.newQuote);
-      this.newQuote = new Quote(0,"","",0,0,"", new Date());
-    }else{
-      alert("Enter valid input")
-    }
-  }
+  // submitQuote(f:NgForm){
+  //   if(f.valid){
+  //     this.addQuote.emit(this.newQuote);
+  //     this.newQuote = new Quote(0,"","",0,0,"", new Date());
+  //   }else{
+  //     alert("Enter valid input")
+  //   }
+  // }
+  submitQuote(quoteForm: NgForm){
+    this.addQuote.emit(this.newQuote); 
+    quoteForm.reset()
+      }
 
   // clear for input
   clearQuoteForm(quoteForm: NgForm){

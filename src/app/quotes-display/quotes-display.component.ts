@@ -35,18 +35,9 @@ export class QuotesDisplayComponent implements OnInit {
     this.quotes.push(quote);
   }
 
-  // deleteQuote(event, index){
-  //   if (event){
-  //     this.quotes.splice(index, 1)
-  //   }
-  // }
-  quoteDelete(isComplete:any,index:any){
-    if(isComplete){
-      let toDelete = confirm(`Are you sure you want to delete this quote?`)
-      if(toDelete){
-        this.quotes.splice(index,1); 
-      }
-
+  deleteQuote(event, index){
+    if (event){
+      this.quotes.splice(index, 1)
     }
   }
   constructor() { }

@@ -83,7 +83,7 @@
                     </blockquote>
                 </div>
                 <div class="card-footer text-light">
-                    <app-quote-text [quote]='quote' (isComplete) = 'quoteDelete($event,i)'></app-quote-text>
+                    <app-quote-text [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-text> 
                 </div>
                 </div>
             </div>
@@ -91,4 +91,4 @@
           </div>
         </div>
         <app-quotes-form (addQuote) = "addNewQuote($event)"></app-quotes-form>
-        <app-quote-footer></app-quote-footer>
+       
