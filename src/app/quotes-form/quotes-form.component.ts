@@ -25,6 +25,11 @@ export class QuotesFormComponent implements OnInit {
     }
   }
 
+  // clear for input
+  clearQuoteForm(quoteForm: NgForm){
+    quoteForm.reset()
+  }
+
   constructor() { }
 
   ngOnInit(): void {

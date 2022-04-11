@@ -1,5 +1,5 @@
 
-.container{
+/* .container{
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -18,4 +18,62 @@ textarea:focus, input:focus{
 }
 .form-control::placeholder{
   color: rgb(236, 226, 226);
+} */
+
+.container-form{
+  width: 60%;
+  margin: 5vh auto;
+  background: transparent;
+  padding: 1vh;
+}
+
+.new-quote-heading{
+  text-align: center;
+}
+.row{
+  padding: 1vh;
+}
+
+.form-label{
+  font-weight: bold;
+}
+
+.alert{
+  color: red;
+  padding: 0.5vh;
+  font-weight: bold;
+}
+
+.form-btn{
+  background-color: chocolate;
+  color: #DDDDDD;
+  font-weight: bold;
+  width: 20%;
+  margin: 1vh 2vh;
+}
+
+.clear-form{
+  background-color: chocolate;
+  color: #DDDDDD;
+}
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+  .add-quotes-form{
+      width: 80%;
+  }
+  .form-btn{
+      width: auto;
+  }
+  
 }

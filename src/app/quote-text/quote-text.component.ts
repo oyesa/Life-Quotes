@@ -21,8 +21,8 @@ export class QuoteTextComponent implements OnInit {
   }
 
 
-  deleteQuote(){
-    if(confirm('Are you certain you want to delete?')){
+  deleteQuote(event){
+    if(confirm('Are you certain you want to delete this quote?')){
       this.quoteDelete.emit(true);
     }else{
       this.quoteDelete.emit(false);

@@ -131,13 +131,13 @@
   <app-quote-text *ngIf="!quote.showQuoteText" [quote]="quote" (quoteDelete)="deleteQuote($event,i)"></app-quote-text> 
   </div>
   </div>
-  <div class="carousel-item" data-bs-interval="3000" *ngFor="let quote of quotes;let i=index">
+  <div class="carousel-item" data-bs-interval="3000" *ngFor="let quote of quotes;let i=index;">
   <img src="./assets/images/backg4.jpg" class="d-block w-100" alt="...">
   <div class="carousel-caption d-none d-md-block">
   <h3>Submitted by : Oyesa</h3>
   <small>{{quote.quoteDate | dateCounter}} </small>
   <hr>
-  <button class="icon btn-info" type="button" (click)="toggleQuoteText(i)"><i *ngIf="!quote.showQuoteText" class="fa fa-angle-down"></i><i *ngIf="quote.showQuoteText" class="fa fa-angle-up"></i></button>
+  <button class="icon btn-info" type="button" (click)="toggleQuoteText(1)"><i *ngIf="!quote.showQuoteText" class="fa fa-angle-down"></i><i *ngIf="quote.showQuoteText" class="fa fa-angle-up"></i></button>
   <app-quote-text *ngIf="quote.showQuoteText" [quote]="quote" (quoteDelete)="deleteQuote($event,i)"></app-quote-text> 
   </div>
   </div>
