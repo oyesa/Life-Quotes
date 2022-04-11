@@ -43,11 +43,15 @@
   margin-right: 20px;
   padding: 30px;
   font-family: 'Beau Rivage', cursive;
-  color: black;
+  color: goldenrod;
   font-size: 30px;
   letter-spacing: 3px;
+  font-weight: bold;
 }
 
+.footer{
+  font-size: 13px;
+}
 
 
    

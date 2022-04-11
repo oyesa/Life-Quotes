@@ -24,7 +24,7 @@ textarea:focus, input:focus{
   width: 50%;
   margin: 5vh auto;
   background: transparent;
-  color: black;
+  color: goldenrod;
 }
 
 .new-quote-heading{
@@ -45,16 +45,16 @@ textarea:focus, input:focus{
 }
 
 .form-btn{
-  background-color: rgb(101, 209, 155);
-  color: #DDDDDD;
+  background-color: goldenrod;
+  color: white;
   font-weight: bold;
   width: 18%;
   margin: 1vh 2vh;
 }
 
 .clear-form{
-  background-color: rgb(101, 209, 155);
-  color: #DDDDDD;
+  background-color: goldenrod;
+  color: white;
 }
 
 

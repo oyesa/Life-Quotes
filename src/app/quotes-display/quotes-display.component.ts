@@ -20,17 +20,17 @@ export class QuotesDisplayComponent implements OnInit {
   ]
 
 
-  toggleQuoteText(index){
-    this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
-  }
+  // toggleQuoteText(index){
+  //   this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
+  // }
 
   // showQuoteForm: boolean=false
   // toggleQuoteForm(){
   //   this.showQuoteForm=!this.showQuoteForm;
   // }
   
-  addNewQuote(quote:Quote){
-    let quoteLength=this.quotes.length;
+  addNewQuote(quote:any){
+    let quoteLength = this.quotes.length;
     quote.id= quoteLength++;
     this.quotes.push(quote);
   }

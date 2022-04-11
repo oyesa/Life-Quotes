@@ -64,7 +64,7 @@
   <app-quotes-form (addQuote)='addNewQuote($event)'></app-quotes-form>
     </div> -->
 
-    <h3 class="header2"><strong>Quotes to live by</strong></h3>
+    <h3 class="header2"><span>&#129496;&#127999;</span>Quotes to live by <span>&#129496;&#127999;</span></h3>
     <div class="container-fluid text-center text-light">
       <div class="container">
           <div class="row">
@@ -78,6 +78,8 @@
                         <p>{{quote.quoteText}}</p>
                     
                         <small class="blockquote-footer text-light mt-3"><cite title="Source Title">{{quote.quoteAuthor}} </cite></small>
+                        <br>
+                        <footer class="footer text-light mt-3">Submitted By: {{quote.quoteSubmitter}}</footer>
                     </blockquote>
                 </div>
                 <div class="card-footer text-light">
@@ -90,4 +92,3 @@
         </div>
         <app-quotes-form (addQuote) = "addNewQuote($event)"></app-quotes-form>
         <app-quote-footer></app-quote-footer>
-        

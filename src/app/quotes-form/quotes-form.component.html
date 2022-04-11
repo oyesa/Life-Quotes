@@ -24,11 +24,11 @@
       </div>
       <div class="row">
         <div class="col-2">
-          <label for="quoteAuthor" class="form-label">Submitted by:</label></div>
+          <label for="quoteSubmitter" class="form-label">Submitted by:</label></div>
           <div class="col-8">
-            <input type="text" class="form-control" id="quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteAuthor" placeholder="Input submitter name">
+            <input type="text" class="form-control" id="quoteSubmitter" name="quoteSubmitter" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteSubmitter" placeholder="Input submitter name">
             <div [hidden]="quoteAuthor.valid || quoteAuthor.pristine" class="alert alert-danger">
-              <p>submitter required</p>
+              <p>Name required</p>
             </div>
           </div>
       </div>
