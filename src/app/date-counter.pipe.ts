@@ -35,7 +35,7 @@ export class DateCounterPipe implements PipeTransform {
             return counter + '' + i + ' ago';
           }else{ 
             // return when its more than a day
-            return counter + '' + i + 's age';
+            return counter + '' + i + 's ago';
           }
         }
       }

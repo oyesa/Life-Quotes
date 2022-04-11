@@ -13,18 +13,19 @@ export class QuoteTextComponent implements OnInit {
   @Output() quoteDelete = new EventEmitter<boolean>()
 
   thumbsQuote(event){
-    if(event=== 'up'){
-      this.quote.thumbsUp+1
-    }else if(event=== 'down'){
-      this.quote.thumbsDown+1
+    if(event === 'up'){
+      this.quote.thumbsUp++;
+    }else if(event === 'down'){
+      this.quote.thumbsDown++;
     }
   }
 
+
   deleteQuote(){
     if(confirm('Are you certain you want to delete?')){
-      this.quoteDelete.emit(true)
+      this.quoteDelete.emit(true);
     }else{
-      this.quoteDelete.emit(false)
+      this.quoteDelete.emit(false);
     }
   }
 

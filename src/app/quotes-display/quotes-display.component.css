@@ -1,32 +1,52 @@
 
-.container{
+#carousel-caption {
  font-family: 'poppins', sans-serif;
- text-align: center;
- color: white;
 } 
 
-.btn{
+/* .btn{
   margin: 7px;
+  color: white;
+} */
+
+/* button{
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
+.icon{
+  border:none;
+  width:5%;
+  margin:auto;
   color: white;
 }
 
-button{
-  background-color: rgba(0, 0, 0, 0.1);
-}
+/* .card-title{
+  color: white;
+} */
+.carousel-caption{
+  font-size: 18px;
+} 
 
-/* .carousel-caption{
-  top: 30%;
-}
-
-.picsum-img-wrapper{
+/* .picsum-img-wrapper{
   height: 80vh;
   width: 100%;
-}
+} */
 
 .card{
   background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .card-text{
-    color: #000;
-    }   */
+.add-quote button{
+  align-items: center;
+}
+
+.carousel-item{
+  min-height: 220px;
+}
+
+#carouselExampleDark img {
+  height: 50vh;
+  width: 100%;
+}
+
+
+   

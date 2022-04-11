@@ -13,7 +13,7 @@ export class QuotesDisplayComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(0, 'African Intellectuals', 'Each language no matter how small carries its memory of the world', 0, 0, new Date('2022,04,10')),
     new Quote(1, 'Jane Austen', 'A person may be proud without being vain, pride relates more to the opinion of ourselves, vanity to what we would have people think of us.', 0, 0, new Date('2022,04,11')),
-    new Quote(2, 'Charles Bukowski', '...But we joke and laugh otherwise we would start screaming.', 0, 0, new Date('2022,04,09'))
+    // new Quote(2, 'Charles Bukowski', '...But we joke and laugh otherwise we would start screaming.', 0, 0, new Date('2022,04,09'))
   ]
 
 
@@ -25,19 +25,27 @@ export class QuotesDisplayComponent implements OnInit {
   toggleQuoteForm(){
     this.showQuoteForm=!this.showQuoteForm;
   }
-  deleteQuote(event, index){
-    if (event){
-      this.quotes.splice(index, 1)
+  
+  addNewQuote(quote:Quote){
+    let quoteLength=this.quotes.length;
+    quote.id= quoteLength+1;
+    this.quotes.push(quote)
+  }
+
+  // deleteQuote(event, index){
+  //   if (event){
+  //     this.quotes.splice(index, 1)
+  //   }
+  // }
+  deleteQuote(isComplete:any,index:any){
+    if(isComplete){
+      let toDelete = confirm(`Are you sure you want to delete this quote?`)
+      if(toDelete){
+        this.quotes.splice(index,1); 
+      }
+
     }
   }
-  
-  addQuote(newquote:Quote){
-    let quoteLength=this.quotes.length;
-    newquote.id= quoteLength+1;
-    this.quotes.push(newquote)
-  }
-
-
   constructor() { }
 
   ngOnInit(): void {
