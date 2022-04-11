@@ -1,12 +1,12 @@
 
-<div class="container-fluid mt-5" style="width: 100%;">
+<!-- <div class="container-fluid mt-5" style="width: 100%;">
   <ngb-carousel [interval]="3000">
     <ng-template ngbSlide  *ngFor="let quote of quotes; let i=index">
       
       <div class="picsum-img-wrapper">
       </div>
       <div class="carousel-caption">
-        <!-- add function to display quote with highest vote -->
+        
         <div class="card-title">
           <h3>Submitted by: Oyesa </h3>
           <small>{{quote.quoteDate | dateCounter}} </small>
@@ -26,12 +26,54 @@
         <small>{{quote.quoteDate | dateCounter} </small>
       </div>
     </ng-template ngbSlide> 
-    </ngb-carousel>
+    </ngb-carousel> -->
 
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h6>Submitted by: Oluchi</h6>
+            <small>{{quote.quoteDate | dateCounter}} </small>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h6>Submitted by: Oyesa</h6>
+            <small>{{quote.quoteDate | dateCounter}} </small>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h6>Submitted by: Oluchina</h6>
+            <small>{{quote.quoteDate | dateCounter}} </small>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   
     <div>
+      <hr>
       <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-warning"><i class="fa fa-plus-circle fa-lg"></i>Add Quote</button>
       <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-warning"><i class="fa fa-minus-circle fa-lg"></i>Hide</button>
     </div>
-    <app-quotes-form *ngIf="showQuoteForm" (quoteAdd)="addQuote($event)"></app-quotes-form> 
-</div>
+    <!-- <app-quotes-form *ngIf="showQuoteForm" (quoteAdd)="addQuote($event)"></app-quotes-form>  -->
+<!-- </div> -->
 

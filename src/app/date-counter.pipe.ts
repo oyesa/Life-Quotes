@@ -33,7 +33,8 @@ export class DateCounterPipe implements PipeTransform {
         if(counter > 0){
           if(counter === 1){
             return counter + '' + i + ' ago';
-          }else{
+          }else{ 
+            // return when its more than a day
             return counter + '' + i + 's age';
           }
         }

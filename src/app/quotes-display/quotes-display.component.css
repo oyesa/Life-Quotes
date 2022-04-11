@@ -1,17 +1,20 @@
 
-/* .container-fluid{
-  padding: 42%;
-} */
+.container{
+ font-family: 'poppins', sans-serif;
+ text-align: center;
+ color: white;
+} 
 
 .btn{
   margin: 7px;
+  color: white;
 }
 
 button{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.carousel-caption{
+/* .carousel-caption{
   top: 30%;
 }
 
@@ -26,4 +29,4 @@ button{
 
   .card-text{
     color: #000;
-    }
+    }   */
