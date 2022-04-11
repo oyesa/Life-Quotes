@@ -2,7 +2,15 @@
   width: 100%;
   text-align: center;
   color: #f8f8ff;
+  font-weight: bold;
   position: fixed;
-  font-family: 'Beau Rivage', cursive;
+  font-family: 'poppins', sans-serif;
+}
+
+.card-img {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 

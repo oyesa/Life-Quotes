@@ -22,6 +22,16 @@
             </div>
           </div>
       </div>
+      <div class="row">
+        <div class="col-2">
+          <label for="quoteAuthor" class="form-label">Submitted by:</label></div>
+          <div class="col-8">
+            <input type="text" class="form-control" id="quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteAuthor" placeholder="Input submitter name">
+            <div [hidden]="quoteAuthor.valid || quoteAuthor.pristine" class="alert alert-danger">
+              <p>submitter required</p>
+            </div>
+          </div>
+      </div>
     </div>
     <div class="text-center">
       <button type="submit" [disabled]="!quoteForm.valid" class="btn form-btn">Add Quote</button>
@@ -30,4 +40,4 @@
   </form>
 </div>
 
-<hr>
+

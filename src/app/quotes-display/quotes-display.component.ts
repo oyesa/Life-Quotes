@@ -11,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 export class QuotesDisplayComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(0, 'African Intellectuals', 'Each language no matter how small carries its memory of the world', 33, 0, new Date('2022,04,02')),
-    new Quote(1, 'Jane Austen', 'A person may be proud without being vain, pride relates more to the opinion of ourselves, vanity to what we would have people think of us.', 99, 7, new Date('2022,03,11')),
-    // new Quote(2, 'Charles Bukowski', '...But we joke and laugh otherwise we would start screaming.', 0, 0, new Date('2022,04,09'))
+    new Quote(0, 'African Intellectuals', 'Each language no matter how small carries its memory of the world', 33, 0, 'Olu', new Date('2022,04,02')),
+    new Quote(1, 'Jane Austen', 'A person may be proud without being vain, pride relates more to the opinion of ourselves, vanity to what we would have people think of us.', 99, 7, 'Oyesa', new Date('2022,03,11')),
+    new Quote(2, 'Proverbs 4:23', 'Above all else, guard your heart, for everything you do flows from it.', 9, 3, 'Mercy', new Date('2022,02,14')),
+    new Quote(2, 'A wise Earthling', 'That lesson will repeat itself until you learn it', 67, 1, 'Uncle Sam', new Date('2022,01,29')),
+    new Quote(2, 'Charles Bukowski', '...But we joke and laugh otherwise we would start screaming.', 7, 0, 'Sseppa', new Date('2022,03,09')),
+    new Quote(2, 'Dale Carnegie', 'Even god doesnt propose to judge a man till his last days, why should you and I?', 27, 0, 'Oluchina', new Date('2022,04,12'))
   ]
 
 
@@ -37,7 +40,7 @@ export class QuotesDisplayComponent implements OnInit {
   //     this.quotes.splice(index, 1)
   //   }
   // }
-  deleteQuote(isComplete:any,index:any){
+  quoteDelete(isComplete:any,index:any){
     if(isComplete){
       let toDelete = confirm(`Are you sure you want to delete this quote?`)
       if(toDelete){

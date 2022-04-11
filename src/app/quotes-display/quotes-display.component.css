@@ -1,16 +1,7 @@
 
-#carousel-caption {
+/* #carousel-caption {
  font-family: 'poppins', sans-serif;
 } 
-
-/* .btn{
-  margin: 7px;
-  color: white;
-} */
-
-/* button{
-  background-color: rgba(0, 0, 0, 0.1);
-} */
 
 .icon{
   border:none;
@@ -19,23 +10,20 @@
   color: white;
 }
 
-/* .card-title{
-  color: white;
-} */
 .carousel-caption{
   font-size: 18px;
-} 
-
-/* .picsum-img-wrapper{
-  height: 80vh;
-  width: 100%;
-} */
+}  */
 
 .card{
   background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-color:white ;
+  box-shadow: 5px, white;
+  border-radius: 6px;
   }
 
-.add-quote button{
+/* .add-quote button{
   align-items: center;
 }
 
@@ -46,7 +34,20 @@
 #carouselExampleDark img {
   height: 55vh;
   min-height: 400px;
+}  */
+
+
+.header2{
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding: 30px;
+  font-family: 'Beau Rivage', cursive;
+  color: black;
+  font-size: 30px;
+  letter-spacing: 3px;
 }
+
 
 
    

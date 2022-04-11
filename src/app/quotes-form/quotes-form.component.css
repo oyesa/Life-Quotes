@@ -24,6 +24,7 @@ textarea:focus, input:focus{
   width: 50%;
   margin: 5vh auto;
   background: transparent;
+  color: black;
 }
 
 .new-quote-heading{

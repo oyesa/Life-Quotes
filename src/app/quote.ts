@@ -7,6 +7,7 @@ export class Quote {
     public quoteText:string,
     public thumbsUp:number,
     public thumbsDown:number,
+    public quoteSubmitter:String,
     public quoteDate:Date
   ){
     this.showQuoteText=false;

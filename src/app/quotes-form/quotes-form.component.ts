@@ -11,15 +11,14 @@ import { formatCurrency } from '@angular/common';
 })
 export class QuotesFormComponent implements OnInit {
 
-  newQuote = new Quote(0, '', '', 0, 0, new Date);
+  newQuote = new Quote(0, '', '', 0, 0, '', new Date);
   @Output() addQuote = new EventEmitter<Quote>();
 
   submitQuote(f:NgForm){
     this.addQuote.emit(this.newQuote)
-    // this.newQuote=new Quote(0,"","","",0,0,new Date())
     if(f.valid){
       this.addQuote.emit(this.newQuote);
-      this.newQuote = new Quote(0,"","",0,0, new Date());
+      this.newQuote = new Quote(0,"","",0,0, '', new Date());
     }else{
       alert("Enter valid input")
     }
