@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-2"><label for="quoteText" class="form-label">Quote:</label></div>
         <div class="col-8">
-          <textarea type="text" id="quoteText" class="form-control" #quoteText="ngModel" [(ngModel)]="newQuote.quoteText" placeholder="Input Quote Text"></textarea>
+          <textarea type="text" [ngModelOptions]="{standalone:true}" id="quoteText" class="form-control" #quoteText="ngModel" [(ngModel)]="newQuote.quoteText" placeholder="Input Quote Text"></textarea>
           <div [hidden]="quoteText.valid || quoteText.pristine" class="alert alert-danger">
             <p>Text is required</p>
         </div>
@@ -16,7 +16,7 @@
         <div class="col-2">
           <label for="quoteAuthor" class="form-label">Author:</label></div>
           <div class="col-8">
-            <input type="text" class="form-control" id="quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteAuthor" placeholder="Input Quote Author">
+            <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" id="quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteAuthor" placeholder="Input Quote Author">
             <div [hidden]="quoteAuthor.valid || quoteAuthor.pristine" class="alert alert-danger">
               <p>Authour is required</p>
             </div>
@@ -26,7 +26,7 @@
         <div class="col-2">
           <label for="quoteSubmitter" class="form-label">Submitted by:</label></div>
           <div class="col-8">
-            <input type="text" class="form-control" id="quoteSubmitter" name="quoteSubmitter" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteSubmitter" placeholder="Input submitter name">
+            <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" id="quoteSubmitter" name="quoteSubmitter" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteSubmitter" placeholder="Input submitter name">
             <div [hidden]="quoteAuthor.valid || quoteAuthor.pristine" class="alert alert-danger">
               <p>Name required</p>
             </div>

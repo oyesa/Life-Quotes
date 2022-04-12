@@ -8,9 +8,15 @@ import {Quote} from '../quote'
   styleUrls: ['./quote-text.component.css']
 })
 export class QuoteTextComponent implements OnInit {
+  [x: string]: any;
 
-  @Input() quote:Quote
-  @Output() quoteDelete = new EventEmitter<boolean>()
+  @Input() quote!: Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
+  quotes: any;
+
+  deleteQuote(complete:boolean){
+    this.isComplete.emit(complete);
+  }
 
   thumbsQuote(event){
     if(event === 'up'){
@@ -19,16 +25,6 @@ export class QuoteTextComponent implements OnInit {
       this.quote.thumbsDown++;
     }
   }
-
-
-  deleteQuote(event){
-    if(confirm('Are you certain you want to delete this quote?')){
-      this.quoteDelete.emit(true);
-    }else{
-      this.quoteDelete.emit(false);
-    }
-  }
-
   constructor() { }
 
   ngOnInit(): void {
